@@ -1,6 +1,5 @@
-// Work with dates
-const moment = require('moment')
-
+// Work with dates //*! In disuse
+const moment = require('moment') 
 let now = moment()
 
 //console.log(now)
