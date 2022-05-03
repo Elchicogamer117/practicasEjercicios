@@ -7,7 +7,9 @@ function router(req,res){
       console.log(req.url)
       switch (req.url){
             case '/hello':
-                  res.write('Hello explorer 🖐')
+                  let greet = hello()
+                  res.write(greet)
+                  //res.write('Hello explorer 🖐')
                   res.end()
                   break
             default:
@@ -20,6 +22,9 @@ function router(req,res){
       res.write('Test HTTP with native nodejs')
       res.end()
 */
+}
+function hello(){
+      return 'Hello explorer 🖐'
 }
 
 console.log('Listening on port 3000')
