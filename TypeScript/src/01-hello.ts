@@ -1,2 +1,2 @@
-const myNameType = 'Cristian';
-console.log(myNameType)
+const myName = 'Cristian';
+console.log(myName)
