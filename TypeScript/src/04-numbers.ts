@@ -6,16 +6,16 @@
 
   //* Explicito
   let customerAge:number = 117;
-  customerAge += '1';
+  customerAge += 1;
   console.log('customerAge', customerAge);
 
-  let productInStock:number; //*? Cuando solo declaras una variable es obligatirio hacerlo de forma explicita
+  let productInStock:number = 10;
   console.log('productInStock', productInStock);
   if (productInStock > 0){
     console.log('Its available')
   }
 
-  let discount = parseInt('SaaS') //*? Lo toma como NaN ya que puede ser considerado como numero
+  let discount = parseInt('117')
   console.log('discount', discount);
   if(discount <= 200){
     console.log('apply')
@@ -23,11 +23,11 @@
     console.log('not apply')
   }
 
-  let hex = 0xfhf;
+  let hex = 0xfff;
   console.log('hex', hex);
-  let bin = 0b0117;
+  let bin = 0b011;
   console.log('hex', hex);
 
-  const myNumber: Number = 10 //*?Number es de tipo objeto, funciona en la mayoria de los casos pero no es correcto
+  const myNumber: number = 10;
 
 })();
