@@ -15,7 +15,7 @@
 
   addProduct({
     title: 'Halo CE',
-    createAt: new Date(2001, 11, 15),
+    createAt: new Date(2001, 10, 15),
     stock: 343
   });
   addProduct({
@@ -29,7 +29,7 @@
   //  product.push(true);
   product.push({
     title: 'Halo 2 ',
-    createAt: new Date(2004, 11, 9),
+    createAt: new Date(2004, 10, 9),
     stock: 216,
   });
   console.log(product)
