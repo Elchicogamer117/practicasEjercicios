@@ -1,0 +1,15 @@
+{
+  "name": "asincronismojs",
+  "version": "1.0.0",
+  "description": "Trabajando con asincronismo en JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "promise:challengeESM": " node src/promiseNativeESM/challengeNative.js"
+  },
+  "keywords": [
+    "esmodules"
+  ],
+  "author": "elchicogamer117",
+  "license": "MIT"
+}
