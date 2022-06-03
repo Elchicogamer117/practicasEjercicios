@@ -1,0 +1,16 @@
+{
+  "name": "asincronismojs",
+  "version": "1.0.0",
+  "description": "Trabajando con asincronismo en JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async"
+  ],
+  "author": "elchicogamer117",
+  "license": "MIT"
+}
