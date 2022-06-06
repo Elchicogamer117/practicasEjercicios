@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -7,20 +8,24 @@ module.exports = {
         filename: 'main.js',
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js' , 'mjs']
     },
     module: {
         rules: [
           {
-            //* Test declara que extensión de archivos aplicara el loader
             test: /\.m?js$/,
-            //* Use es un arreglo u objeto donde dices que loader aplicaras
             use: {
               loader: "babel-loader"
             },
-            //* Exclude permite omitir archivos o carpetas especificas
             exclude: /node_modules/
           }
         ]
-      }
+      },
+    plugins: [
+        new HtmlWebpackPlugin({ //* Configuracion del plugin
+            inject: true, //* Inyecta el buldle al templeate HTML
+            template: './public/index.html', 
+            filename: './index.html' 
+        })
+    ]
 }
