@@ -1,7 +1,7 @@
 {
   "name": "webpack",
   "version": "1.0.0",
-  "description": "A minimal portfolio with Vanilla JavaScript",
+  "description": "A practice using webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,16 +10,13 @@
     "dwatch": "webpack --config webpack.config.dev.js --watch",
     "bwatch": "webpack --config webpack.config.js --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gndx/js-portfolio.git"
-  },
   "keywords": [
     "javascript",
     "html",
-    "css"
+    "css",
+    "webpack"
   ],
-  "author": "oscar barajas <oscar@gndx.dev>",
+  "author": "Elchicogamer117 <cfloresm1604@alumno.ipn.mx>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gndx/js-portfolio/issues"
