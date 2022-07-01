@@ -1,6 +1,13 @@
 -var titulo = "Titulo principal"
 -var titulos = ["Titulo Principal", "Subtitulo 1",  "Subtitulo 2",  "Subtitulo 3"]
--var usuario = "Cristian"
+mixin caja(imagen, titulo, contenido) 
+  .caja 
+    .caja__imagen: img(src="images/"+imagen , alt="image")
+    .caja__contenido 
+      h3=titulo
+      p=contenido 
+      a.boton leer mas 
+
 doctype html
 html(lang="en")
   head
@@ -17,12 +24,14 @@ html(lang="en")
       else 
         a.boton Registro 
     section.intro 
-      .intro__imagen: img(src="images/imagen.png", alt="images")
+      .intro__imagen: img(src="images/imagen.png", alt="image")
       .intro__contenido 
         h2 #{titulos[0]}
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsum odit fugit vero ipsa! Et excepturi corrupti cupiditate eaque perspiciatis officia reiciendis sit quis aliquid minus atque ullam, laborum recusandae?
           span Proin sit amet tellus nec nisl bibendum ornare nec at augue. Integer semper feugiat varius.
         a.boton Leer mas
-    ul 
-      each titulo in titulos 
-        li=titulo
+    main.contenido 
+      +caja('imagen.png', titulos[1], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ')
+      +caja('imagen.png', titulos[2], 'Quaerat ipsum odit fugit vero ipsa! Et excepturi corrupti cupiditate eaque perspiciatis officia. ')
+      +caja('imagen.png', titulos[3], 'Reiciendis sit quis aliquid minus atque ullam, laborum recusandae? ')
+
