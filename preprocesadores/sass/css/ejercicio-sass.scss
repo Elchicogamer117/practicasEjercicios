@@ -1,10 +1,17 @@
+$Fuente-principal: 'Lato', sans-serif;
+$Fuente-secundaria: 'Oswald', sans-serif;
+$color-primario: #333333;
+$color-claro: #FFFFFF;
+$color-secundario: #8841DA;
+$color-detalle: #3f579a;
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: $Fuente-principal;
 }
 
 main {
@@ -16,6 +23,8 @@ main {
 .perfil {
     width: 50%;
     padding-top: 50px;
+    color: $color-claro;
+    background-color: $color-secundario;
     &__avatar {
         display: block;
         margin: 0 auto;
@@ -23,6 +32,7 @@ main {
     }
     &__nombre {
         font-size: 20px;
+        font-family: $Fuente-secundaria;
         text-align: center;
         text-transform: uppercase;
     }
@@ -39,9 +49,35 @@ main {
         margin: 15px auto;
         padding-top: 15px;
         border-radius: 30px;
+        font-family: $Fuente-secundaria;
+        color: $color-claro;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
     }
+}
+
+.estadistica--perfil {
+    display: flex;
+    width: 50%;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 15px;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: $color-claro;
+    h3 {
+		font-size: 20px;
+		font-weight: 600;
+        font-family: $Fuente-secundaria;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: 12px;
+        font-family: $Fuente-secundaria;
+		text-align: center;
+		text-transform: uppercase;
+	}
 }
 
