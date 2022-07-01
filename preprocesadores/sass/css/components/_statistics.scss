@@ -1,0 +1,26 @@
+@use "../globals" as * ;
+
+.estadistica--perfil {
+    display: flex;
+    width: 50%;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 15px;
+    border-radius: 20px;
+    justify-content: space-around;
+    color: $color-primario;
+    background-color: $color-claro;
+    h3 {
+		font-size: 20px;
+		font-weight: 600;
+        font-family: $Fuente-secundaria;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: 12px;
+        font-family: $Fuente-secundaria;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

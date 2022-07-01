@@ -1,0 +1,29 @@
+@use "../globals" as * ;
+
+.ubicacion--perfil {
+    width: 50%;
+    height: 90px;
+    margin: 30px auto 0 auto;
+    padding: 20px 0 0 50px;
+    border-radius: 20px;
+    color: $color-primario;
+    background-color: $color-claro;
+    i {
+        display: block;
+        float: left;
+        padding-right: 10px;
+        font-size: 40px;
+        color: $color-detalle; 
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Oswald", sans-serif; 
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 12px;
+        font-family: "Oswald", sans-serif; 
+        text-transform: uppercase;
+    }
+}

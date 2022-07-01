@@ -1,0 +1,49 @@
+@use "../globals" as * ;
+
+.perfil {
+    width: 50%;
+    padding-top: 50px;
+    color: $color-claro;
+    background-color: $color-secundario;
+    &__avatar {
+        display: block;
+        margin: 0 auto;
+        border-radius: 40%;
+    }
+    &__nombre {
+        font-size: 20px;
+        font-family: $Fuente-secundaria;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__titulo {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__boton {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 15px auto;
+        padding-top: 15px;
+        border-radius: 30px;
+        font-family: $Fuente-secundaria;
+        color: $color-claro;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.perfil__minibio {
+    margin: 0 auto;
+    padding-top: 20px;
+    h2 {
+        @extend .perfil__nombre;
+    }
+    h3 {
+        @extend .perfil__titulo;
+    }
+}
