@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.perfil {
+    width: 50%;
+    padding-top: 50px;
+    &__avatar {
+        display: block;
+        margin: 0 auto;
+        border-radius: 40%;
+    }
+    &__nombre {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__titulo {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__boton {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 15px auto;
+        padding-top: 15px;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
