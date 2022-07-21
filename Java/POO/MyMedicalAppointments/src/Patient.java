@@ -13,6 +13,7 @@ public class Patient {
         this.name = name;
         this.email = email;
     }
+
     public String getWeight(){
         return this.weight + " Kg";
     }
@@ -30,7 +31,6 @@ public class Patient {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }

@@ -8,20 +8,28 @@ public class Main {
         mySpartanDoctor.showName();
         System.out.println(mySpartanDoctor.speciality);
 
+        int i = 0;
+        int b = 2;
+        b = i;
+        System.out.println(b);
+
         Patient patient = new Patient("John", "spartan117@infinity.unsc");
+        Patient patient2 = new Patient("Kai", "spartan125@plata.unsc");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient = patient2;
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient2.setName("Kate");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        /*
         patient.setWeight(130);
         System.out.println(patient.getWeight());
         patient.setPhoneNumber("34311721");
         System.out.println(patient.getPhoneNumber());
-        /*
-        System.out.println(patient.name);
-        System.out.println(patient.email);
+         */
 
-        patient.weight = 130; //Kg
-        patient.height = 2.18; //m
-        System.out.println(patient.weight);
-        System.out.println(patient.height);
-        */
     }
 
 
