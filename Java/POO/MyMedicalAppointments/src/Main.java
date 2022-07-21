@@ -1,3 +1,5 @@
+import static ui.UIMenu.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,7 +11,7 @@ public class Main {
         Doctor myDoctorCat = new Doctor();
         myDoctorCat.showid();
 
-        UIMenu.showMenu();
+        showMenu();
     }
 
 

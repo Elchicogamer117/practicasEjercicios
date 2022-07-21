@@ -1,7 +1,9 @@
+package ui;
+
 import java.util.Scanner;
 
 public class UIMenu {
-    static void showMenu(){
+    public static void showMenu(){
         System.out.println("Welcome to My Appointments");
         System.out.println("Selecciona la opción deseada");
 
@@ -21,7 +23,6 @@ public class UIMenu {
                 case 2:
                     response = 0;
                     showPatientMenu();
-
                     break;
                 case 0:
                     System.out.println("Thank you for you visit");
