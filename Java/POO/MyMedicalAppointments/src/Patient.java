@@ -1,16 +1,18 @@
 public class Patient {
-    int id;
-    String name;
-    String email;
-    String address;
-    String phoneNumber;
-    String birthday;
-    double weight;
-    double height;
-    String blood;
+    private int id;
+    private String name;
+    private String email;
+    private String address;
+    private String phoneNumber;
+    private String birthday;
+    private double weight;
+    private double height;
+    private String blood;
 
-    public void Patient(String name, String email){
+    Patient(String name, String email){
         this.name = name;
         this.email = email;
+        this.weight = 130;
+        System.out.println(weight + "Kg");
     }
 }
