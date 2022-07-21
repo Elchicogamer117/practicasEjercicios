@@ -9,6 +9,10 @@ public class Main {
         System.out.println(mySpartanDoctor.speciality);
 
         Patient patient = new Patient("John", "spartan117@infinity.unsc");
+        patient.setWeight(130);
+        System.out.println(patient.getWeight());
+        patient.setPhoneNumber("34311721");
+        System.out.println(patient.getPhoneNumber());
         /*
         System.out.println(patient.name);
         System.out.println(patient.email);
