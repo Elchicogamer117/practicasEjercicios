@@ -16,6 +16,10 @@ public class Doctor extends User {
         this.speciality = speciality;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\n Speciality: " + speciality + "\n Available: " + availableAppointments.toString();
+    }
 
     ArrayList<AvailableAppointment>availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date,String time){
@@ -51,6 +55,11 @@ public class Doctor extends User {
         }
         public void setTime(String time) {
             this.time = time;
+        }
+
+        @Override
+        public String toString() {
+            return "Available appointments \n Date: " + date + "\n Time: " + time;
         }
     }
 }
