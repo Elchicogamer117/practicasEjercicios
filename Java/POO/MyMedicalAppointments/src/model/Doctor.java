@@ -23,6 +23,12 @@ public class Doctor extends User {
         return super.toString() + "\n Speciality: " + speciality + "\n Available: " + availableAppointments.toString();
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado de hospital: Nueva efira");
+        System.out.println("Departamento: Cancerologia");
+    }
+
     ArrayList<AvailableAppointment>availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date,String time){
         availableAppointments.add(new AvailableAppointment(date,time));

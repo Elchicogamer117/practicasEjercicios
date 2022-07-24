@@ -51,6 +51,6 @@ public class AppointmentDoctor implements ISchedulable {
 
     @Override
     public void schedule(Date date, String time) {
-        
+
     }
 }
