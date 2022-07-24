@@ -1,6 +1,4 @@
-import model.Doctor;
-import model.Patient;
-import model.User;
+import model.*;
 
 import java.util.Date;
 
@@ -17,6 +15,25 @@ public class Main {
         userD.showDataUser();
         User userP = new Patient("Jonh","spartan117@infinity.unsc");
         userP.showDataUser();
+
+        User userA = new User("Cortana", "cortana@infinity.unsc") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctora");
+                System.out.println("Hospital: Gran caridad");
+                System.out.println("Departamento: Parasitología");
+            }
+        };
+        userA.showDataUser();
+
+        ISchedulable iSchedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
+        ISchedulable iSchedulableA = new AppointmentDoctor();
+        iSchedulableA.schedule(new Date(),"12:52");
 
 
         /*for (model.Doctor.AvailableAppointment aA: mySpartanDoctor.getAvailableAppointments()) {
