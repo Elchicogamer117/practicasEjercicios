@@ -7,9 +7,9 @@ public class Main {
 
         //showMenu();
         Doctor mySpartanDoctor = new Doctor("Catherine Elizabeth Halsey","halsey343@infinity.unsc");
-        mySpartanDoctor.addAvailableAppointment(new Date(), "2pm");
+        /*mySpartanDoctor.addAvailableAppointment(new Date(), "2pm");
         mySpartanDoctor.addAvailableAppointment(new Date(), "4pm");
-        mySpartanDoctor.addAvailableAppointment(new Date(), "6pm");
+        mySpartanDoctor.addAvailableAppointment(new Date(), "6pm");*/
 
         User userD = new Doctor("Henry Glassman","glass@infinity.unsc");
         userD.showDataUser();
