@@ -105,11 +105,11 @@ public class UIMenu {
                 }
             }
             if (userType == 2){
-                for (Patient d: patients) {
-                    if (d.getEmail().equals(email)){
+                for (Patient p: patients) {
+                    if (p.getEmail().equals(email)){
                         emailCorrect = true;
                         //Obtener el usuario logueado
-                        patientLogged = d;
+                        patientLogged = p;
                         //showPatientMenu
                     }
                 }
