@@ -11,18 +11,21 @@ public class UIDoctorMenu {
     public static void showDoctorMenu(){
         int response = 0;
         do {
-            System.out.println("Welcome " + UIMenu.doctorLogged.getName() + "🖖");
+            System.out.println("Welcome " + UIMenu.doctorLogged.getName() + " 🖖");
             System.out.println(" 1 -> Add available appointment");
             System.out.println(" 2 -> My scheduled appointments");
             System.out.println(" 0 -> Logout");
 
             Scanner sc = new Scanner(System.in);
-            String email = sc.nextLine();
+            response = Integer.valueOf(sc.nextLine());
 
             switch (response){
                 case 1:
+                    response = 0;
+                    showAddAvailAppt();
                     break;
                 case 2:
+                    response = 0;
                     break;
                 case 0:
                     UIMenu.showMenu();

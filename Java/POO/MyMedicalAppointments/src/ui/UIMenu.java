@@ -99,6 +99,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Obtener el usuario logueado
                         doctorLogged = d;
+                        UIDoctorMenu.showDoctorMenu();
                         //showDoctorMenu
                     }
                 }
