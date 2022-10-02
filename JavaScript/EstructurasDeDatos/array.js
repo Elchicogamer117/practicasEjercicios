@@ -21,7 +21,6 @@ class MyArray {
         } catch ( error ) {
             return error;
         }
-        
     }
     pop() {
         if (this.length > 0) {
@@ -41,7 +40,6 @@ class MyArray {
             }
             delete this.data[this.length - 1];
             this.length--;
-
             return item;
         } else {
             return "El indice no existe"
@@ -69,8 +67,6 @@ class MyArray {
             return error;
         }
     }
-
-
 }
 
 const myArray = new MyArray();
@@ -81,3 +77,10 @@ myArray.push(7);
 myArray.push(8);
 myArray.unshift(4)
 myArray.unshift(0,1,2,3)
+
+//*? ---- Un string se puede trabajar como un array inmutable -----
+const string = "Cristian";
+string[4]; //Output: t
+string.push("F"); //*! Error
+string.replace("i","o"); // Funciona porque regresa un nuevo string(arreglo), el origin al no se modifica
+string
