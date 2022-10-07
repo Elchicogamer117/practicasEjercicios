@@ -52,7 +52,7 @@ class MySinglyLinkedList {
     }
     remove( index ) {
         if( index >= this.length ) {
-            console.error("Este nodo no existe.")     
+            console.error("Este nodo no existe")     
             }
         if ( index === 0 ) {
             this.head = this.head.next
