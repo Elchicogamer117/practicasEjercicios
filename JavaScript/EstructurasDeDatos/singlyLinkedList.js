@@ -34,10 +34,12 @@ class MySinglyLinkedList {
         return this;
     }
     insert( index, value ) {
-        if (index >= this.length) {
+        if ( index >= this.length ) {
             return this.append( value );
         }
-    
+        if ( index === 0 ) {
+            return this.prepend(value);
+        }
         const newNode = new Node(value);
         const firstPointer = this.getTheIndex(index - 1); // Punto previo para enlazar nuevo punto
         const holdingPointer = firstPointer.next;         // Guardamos ultimo punto para evitar que el garbage collector lo elimine
@@ -48,7 +50,23 @@ class MySinglyLinkedList {
     
         return this;
     }
-    
+    remove( index ) {
+        if( index >= this.length ) {
+            console.error("Este nodo no existe.")     
+            }
+        if ( index === 0 ) {
+            this.head = this.head.next
+            this.length-- 
+            return this
+        }
+
+        let previousPoiner =  this.getTheIndex(index - 1)
+        let nextPointer    =  this.getTheIndex(index + 1 )
+        previousPoiner.next = nextPointer
+        this.length--
+        return this
+    }
+
     getTheIndex( index ) {
         let counter = 0;
         let currentNode = this.head;
@@ -59,6 +77,7 @@ class MySinglyLinkedList {
         }
         return currentNode;
     }
+
 }
 
 let myLinkedList = new MySinglyLinkedList(1);
@@ -67,5 +86,9 @@ myLinkedList.append(1);
 myLinkedList.append(7);
 myLinkedList.append(4);
 myLinkedList.append(3);
+myLinkedList.insert(3,3);
+myLinkedList.insert(0, 'Jonh');
 
-myLinkedList.insert(3,3)
+myLinkedList.remove(0);
+
+myLinkedList.remove(9); //error
