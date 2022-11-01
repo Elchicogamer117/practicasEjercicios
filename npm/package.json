@@ -1,0 +1,32 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Practica de npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elchicogamer117/practicasEjercicios.git"
+  },
+  "keywords": [
+    "npm",
+    "versionamiento",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Elchicogamer117 <cris18002011@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elchicogamer117/practicasEjercicios/issues"
+  },
+  "homepage": "https://github.com/Elchicogamer117/practicasEjercicios#readme",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0"
+  }
+}
