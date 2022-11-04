@@ -1,7 +1,7 @@
-const fetchData = require('../utils/fetchData');
+import fetchData from '../utils/fetchData.js';
 let apiRickAndMorty = 'https://rickandmortyapi.com/api/character/';
 
-const consumeAPI = async(urlAPI) => {
+const consumeAPI = async( urlAPI ) => {
     try {
         const data = await fetchData(urlAPI);
         const character = await fetchData(`${urlAPI}${data.results[0].id}`);
@@ -9,7 +9,7 @@ const consumeAPI = async(urlAPI) => {
         console.log(data.info.count);
         console.log(character.name);
         console.log(origin.dimension);
-    } catch(error) {
+    } catch( error ) {
         console.error(error);
     }
 }

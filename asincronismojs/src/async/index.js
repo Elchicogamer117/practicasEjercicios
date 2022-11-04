@@ -1,5 +1,5 @@
 const doSthAsync = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise(( resolve, reject ) => {
         (true)
         ? setTimeout(() => resolve('Do something async'), 4000)
         : reject(new Error('Test Error'))
@@ -9,6 +9,7 @@ const doSthAsync = () => {
 const doSomething = async() => {
     const something = await doSthAsync();
     console.log(something);
+    console.log("Hello");
 }
 
 console.log('before');
@@ -19,7 +20,7 @@ const anthFunc = async () => {
     try {
         const something = await doSthAsync();
         console.log(something);
-    } catch(error) {
+    } catch( error ) {
         console.error(error)
     }
 }
