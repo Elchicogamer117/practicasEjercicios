@@ -1,4 +1,4 @@
-let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+import { XMLHttpRequest } from 'xmlhttprequest';
 
 const fetchData = (urlAPI) => {
     return new Promise((resolve, reject) => {
@@ -15,4 +15,4 @@ const fetchData = (urlAPI) => {
     });
 }
 
-module.exports = fetchData;
+export default fetchData;

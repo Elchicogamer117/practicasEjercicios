@@ -1,6 +1,6 @@
 const sthllhppn = () => {
-    return new Promise ((resolve, reject) => {
-        if (true){
+    return new Promise (( resolve, reject ) => {
+        if (true) {
             resolve('Yeeih! 😃');
         } else {
             reject('No yeih 😣');
@@ -13,8 +13,8 @@ sthllhppn()
     .catch(err => console.error(err));
 
 const sthllhppn2 = () => {
-    return new Promise ((resolve, reject) => {
-        if (true){
+    return new Promise (( resolve, reject ) => {
+        if (true) {
             setTimeout(() => {
                 resolve('Yeeih! 😃');
             },2000)

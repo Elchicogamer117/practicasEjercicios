@@ -1,4 +1,4 @@
-const fetchData = require('../utils/fetchData');
+import fetchData from '../utils/fetchData.js';
 let apiRickAndMorty = 'https://rickandmortyapi.com/api/character/';
 
 fetchData(apiRickAndMorty)
@@ -13,4 +13,4 @@ fetchData(apiRickAndMorty)
     .then(data => {
         console.log(data.dimension)
     })
-    .catch(err => console.error(err));
+    .catch(error => console.error(error));
